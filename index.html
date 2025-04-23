@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Contact Form</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #f4f4f4;
+      padding: 2rem;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/xqaqkdlj" method="POST" enctype="multipart/form-data">
+    <h2>Contact Us</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <label for="file">Upload File:</label>
+    <input type="file" name="file">
+
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
